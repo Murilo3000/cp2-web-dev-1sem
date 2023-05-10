@@ -1,9 +1,9 @@
 body{
-    background-color: gray;
+    background-color: lightgreen;
 }
 .container{
     width: 100%;
-    height: 800px;
+    height: auto;
     margin: auto;
 }
 
@@ -69,4 +69,17 @@ footer{
     text-transform: uppercase;
     font-weight: bold;
     margin-left: 47%;
+}
+
+#home{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:white;
+}
+
+#home li{
+    list-style: none;
+    display: inline;
+    text-decoration: none;
 }
