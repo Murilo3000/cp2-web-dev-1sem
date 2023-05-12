@@ -35,7 +35,7 @@ body{
 
 #menu ul li a{
     font-family: Arial;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     text-decoration: none;
 }
@@ -82,4 +82,9 @@ footer{
     list-style: none;
     display: inline;
     text-decoration: none;
+}
+
+p{
+    text-align: center;
+    font-size: 17px;
 }
