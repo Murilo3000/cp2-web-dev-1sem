@@ -1,5 +1,5 @@
 body{
-    background-color: lightgreen;
+    background: linear-gradient(to bottom, rgb(116, 190, 116), rgb(75, 102, 82));
 }
 .container{
     width: 100%;
