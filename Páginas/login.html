@@ -24,12 +24,12 @@
             <form class="login-card-form">
                 <div class="form-item">
                     <span class="form-item-icon material-symbols-rounded">mail</span>
-                    <input type="text" placeholder="xxxx@gmail.com" id="emailForm" 
+                    <input type="text" placeholder="xxxx@gmail.com" id="emailForm" onchange="validateFields()"
                     autofocus required>
                 </div>
                 <div class="form-item">
                     <span class="form-item-icon material-symbols-rounded">lock</span>
-                    <input type="password" placeholder="*****" id="passwordForm"
+                    <input type="password" placeholder="*****" id="passwordForm" onchange="validateFields()"
                      required>
                 </div>
                 <div class="form-item-other">
@@ -39,10 +39,10 @@
                     </div>
                     <a href="#">Esqueci minha senha!</a>
                 </div>
-                <button type="submit">Entrar</button>
+                <button type="submit" id="button" onclick="welcome()" disabled="true">Entrar</button>
             </form>
             <div class="login-card-footer">
-                Não é cadastrado? <a href="#">Crie uma conta gratuita</a>
+                Não é cadastrado? <a href="/Páginas/cadastro.html">Crie uma conta gratuita</a>
             </div>
         </div>
         <div class="login-card-social">
@@ -67,7 +67,7 @@
             </div>
         </div>
     </div>
-
+    <script src="/script.js"></script>
 </body>
 
 </html>
