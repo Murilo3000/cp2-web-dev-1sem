@@ -88,3 +88,23 @@ p{
     text-align: center;
     font-size: 17px;
 }
+
+#image{
+    width: 500px;
+    height: 300px;
+}
+
+#indextext{
+    font-size:larger;
+    color:white
+}
+
+.textDescarte{
+    display: block;
+    max-width: 1060px;
+    text-align: center;
+}
+
+.sectiontext{
+    text-align: center;
+}

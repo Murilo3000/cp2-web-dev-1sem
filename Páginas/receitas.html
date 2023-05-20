@@ -122,7 +122,18 @@
     </div>
 
     <hr width="80%" color="black">
-    <footer>@2023-todos os direitos reservados</footer>
+    <footer>
+        Data:
+        <script>
+            let data = new Date()
+            let dia = String(data.getDate()).padStart(2,0)
+            let mes = String(data.getMonth()).padStart(2,0)
+            let ano = data.getFullYear()
+            let dataAtual = `${dia}/${mes}/${ano}`
+            document.write(dataAtual)
+        </script>
+        @2023-todos os direitos reservados
+    </footer>
     <script src="../script.js"></script>
 </body>
 </html>

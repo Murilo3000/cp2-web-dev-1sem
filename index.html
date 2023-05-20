@@ -38,12 +38,48 @@
             <li><center><img id="img" src="./Imagens/Logo.png"></center></li>
             <li>KIT ON</li>
         </ul>
-
- 
     </div>
+    <hr width="80%" color="black">
+    <table align="center" width="80%" height="50%" cellpadding="10" cellspacing="5">
+        <tr>
+            <td rowspan="2">
+                <img id="image"/>
+                <script>
+                    var imagens = [
+                       'Imagens/lixos-reciclaveis.jpg',
+                        'Imagens/reciclagem2.jpg',
+                        'Imagens/reciclagem3.jpg',
+                        'Imagens/reciclagem4.jpg',
+                    ];
+                    var Index = 0;
+                    function slideShow() {
+                        document.getElementById('image').src = imagens[Index];
+                        Index++;
+                        if (Index == imagens.length) { Index = 0; }
+                        setTimeout("slideShow()", 3000);
+                    }
+                    slideShow();
+                </script>
+            </td>
+            <td id="indextext">
+                Descubra a elegância e o sabor de Vinhecity, a vinícola que está conquistando o mundo. Com uma paixão ardente pelo vinho, nossa vinheria entrou recentemente no mercado e já está pronta para levar seus vinhos premiados para além das fronteiras. Em Vinhecity, a arte da produção de vinhos é levada a sério. Nossos especialistas viticultores trabalham em harmonia com a natureza, selecionando cuidadosamente as uvas mais nobres e utilizando técnicas tradicionais e inovadoras para criar vinhos excepcionais. Cada garrafa é um testemunho da nossa dedicação à qualidade e ao sabor inigualável.   
+            </td>
+        </tr>
+    </table>
 
     <hr width="80%" color="black">
-    <footer>@2023-todos os direitos reservados</footer>
-    <script src="script.js"></script>
+    <footer>
+        Data: 
+        <script>
+            let data = new Date()
+            let dia = String(data.getDate()).padStart(2,0)
+            let mes = String(data.getMonth()).padStart(2,0)
+            let ano = data.getFullYear()
+            let dataAtual = `${dia}/${mes}/${ano}`
+            document.write(dataAtual)
+        </script>
+        @2023-todos os direitos reservados
+    </footer>
+    <script src="/script.js"></script>
 </body>
 </html>
