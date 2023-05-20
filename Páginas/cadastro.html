@@ -42,18 +42,13 @@
                 <button type="submit" id="button" onclick="welcome()" disabled="true">Cadastrar</button>
             </form>
             <div class="login-card-social">
-                <div>Outras opções para entrar</div>
+                <div>Outras páginas</div>
                 <div class="login-card-social-btns">
-                    <a href="/Páginas/receitas.html">
-                       <img src="Logoo.png" alt="logo" width="">
+                    <a href="../index.html">
+                       <img src="../Imagens/Logo.png" alt="logo" width="50px">
                     </a>
-                    <a href="/index.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-google" width="24"
-                            height="24" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M17.788 5.108a9 9 0 1 0 3.212 6.892h-8"></path>
-                        </svg>
+                    <a href="../Páginas/formaDescarte.html">
+                        <span class="form-item-icon material-symbols-rounded">recycling</span>
                     </a>
                 </div>
             </div>
@@ -63,7 +58,7 @@
         <script>
             let data = new Date()
             let dia = String(data.getDate()).padStart(2,0)
-            let mes = String(data.getMonth()).padStart(2,0)
+            let mes = String(data.getMonth()+1).padStart(2,0)
             let ano = data.getFullYear()
             let dataAtual = `${dia}/${mes}/${ano}`
             document.write(dataAtual)
