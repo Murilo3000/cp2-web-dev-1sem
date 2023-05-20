@@ -12,11 +12,7 @@ body {
 }
 
 
-.login-card-form{
-    .cadastro [disabled]{
-        opacity: 0.1;
-    }
-}
+
 .login-card {
     width: 450px;
     background: rgba(255, 255, 255, .15);
@@ -152,7 +148,9 @@ body {
     background-color: rgba(0, 0, 0, 0.85);
     cursor: pointer;
 }
-
+.login-card button[disabled]{
+    opacity: 0.1;
+}
 .login-card-social {
     display: flex;
     flex-direction: column;

@@ -1,3 +1,7 @@
+function welcome(){
+    alert("Bem vindo ao Kit On")
+    window.open("../index.html")
+ }
 let data = new Date()
 
 let dia = String(data.getDate()).padStart(2,0)
@@ -8,14 +12,6 @@ let ano = data.getFullYear()
 
 let dataAtual = `${dia}/${mes}/${ano}`
 
-
-function welcome(){
-    alert("Bem vindo ao Kit On")
-    window.open("../index.html")
- }
-function trocar(cor){
-    document.body.style.background = cor
-}
 function validateFields(){
     const emailValid = isEmailValid;
     const passwordValid = isPasswordValid;
@@ -36,4 +32,6 @@ function validateFields(){
  function validateEmail(email) {
      return /\S+@\S+\.\S+/.test(email);
  }
-
+ function trocar(cor){
+    document.body.style.background = cor
+}
