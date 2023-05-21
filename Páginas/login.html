@@ -24,12 +24,12 @@
             <form class="login-card-form">
                 <div class="form-item">
                     <span class="form-item-icon material-symbols-rounded">mail</span>
-                    <input type="text" placeholder="xxxx@gmail.com" id="emailForm" onchange="validateFields()"
+                    <input type="email" required="required" placeholder="xxxx@gmail.com" id="emailForm" onchange="validateFields()"
                     autofocus required>
                 </div>
                 <div class="form-item">
                     <span class="form-item-icon material-symbols-rounded">lock</span>
-                    <input type="password" placeholder="*****" id="passwordForm" onchange="validateFields()"
+                    <input type="password" required="required" placeholder="*****" id="passwordForm" onchange="validateFields()"
                      required>
                 </div>
                 <div class="form-item-other">
@@ -39,7 +39,7 @@
                     </div>
                     <a href="#">Esqueci minha senha!</a>
                 </div>
-                <button type="submit" id="button" onclick="welcome()" disabled="true">Entrar</button>
+                <button type="submit" id="button" disabled="true" onclick="welcome()"  >Enviar</button>
             </form>
             <div class="login-card-footer">
                 Não é cadastrado? <a href="/Páginas/cadastro.html">Crie uma conta gratuita</a>

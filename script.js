@@ -1,7 +1,4 @@
-function welcome(){
-    alert("Bem vindo ao Kit On")
-    window.open("../index.html")
-}
+
 function validateFields(){
     const emailValid = isEmailValid;
     const passwordValid = isPasswordValid;
@@ -11,7 +8,8 @@ function validateFields(){
      const email=document.getElementById("emailForm").value;
      if (!email){
          return false;
-     } return validateEmail(email);
+     } 
+     return validateEmail(email);
 }
  function isPasswordValid(){
      const password = getElementById("passwordForm").value;
@@ -24,4 +22,8 @@ function validateFields(){
 }
  function trocar(cor){
     document.body.style.background = cor
+}
+function welcome(){
+    window.open("../index.html")
+    alert("Bem vindo ao Kit On")
 }

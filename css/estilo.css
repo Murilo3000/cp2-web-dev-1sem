@@ -108,3 +108,29 @@ p{
 .sectiontext{
     text-align: center;
 }
+.importInfo{
+    display:flex;
+    max-width: 750px;
+    margin: 0 auto;
+
+}
+
+.importblock {
+    display: block;
+    flex: 20;
+    padding: 10px;
+}
+
+.sectiontexto{
+    padding: 50px;
+}
+
+.nutrisection{
+    display:block;
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.nutripicture{
+    align-items: center;
+}
