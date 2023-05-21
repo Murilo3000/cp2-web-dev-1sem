@@ -1,4 +1,5 @@
 
+
 function validateFields(){
     const emailValid = isEmailValid;
     const passwordValid = isPasswordValid;
@@ -17,13 +18,16 @@ function validateFields(){
          return false;
      } return true;
 }
- function validateEmail(email) {
-     return /\S+@\S+\.\S+/.test(email);
-}
+
  function trocar(cor){
     document.body.style.background = cor
 }
+ function validateEmail(email) {
+     return /\S+@\S+\.\S+/.test(email);
+}
 function welcome(){
-    window.open("../index.html")
-    alert("Bem vindo ao Kit On")
+    if (isEmailValid()){
+        alert("Bem vindo ao Kit On")
+        window.open("../index.html")
+    }
 }
